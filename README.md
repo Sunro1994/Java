@@ -4,5 +4,7 @@ Collection 상속 계층도 참고용
 
 [바로가기]
 
+| 이름   | 과목 | 바로가기 |
+|--------|--------|--------|
+| 이선로   | 자바  | [바로가기](https://github.com/Sunro1994/Java/tree/main/Collection_Class/ch11)   |
 
-|이선로| 자바 | [바로가기](https://github.com/Sunro1994/Java/tree/main/Collection_Class/ch11)
