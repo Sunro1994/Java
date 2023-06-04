@@ -5,10 +5,10 @@ Collection 상속 계층도 참고용
 
 | 번호 |  멤버  |  사용하시는 언어  |     바로가기      | 
 | :--: | :--------: | :-----------------: | :---------------: |
-|  01  | 이선로 |      자바      | [바로가기][sunro] |
+|  01  | 이선로 |      자바      | [#바로가기][sunro] |
 
 
 
 
 
-[sunro]: [https://github.com/Employment-Study/Algorithm_Study/tree/Sunro_Algo](https://github.com/Sunro1994/Java/tree/main/Collection_Class/ch11)
+[sunro]: (https://github.com/Sunro1994/Java/tree/main/Collection_Class/ch11)
