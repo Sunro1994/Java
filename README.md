@@ -6,8 +6,4 @@ Collection 상속 계층도 참고용
 
 
 
-[이선로] (#sunro)
-
-
-#https://github.com/Sunro1994/Java/tree/main/Collection_Class/ch11
-
+[Sunro](https://github.com/Sunro1994/Java/tree/main/Collection_Class/ch11)
