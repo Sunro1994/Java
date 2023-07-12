@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서유리의 쇼핑몰 다를</title>
+    <style>
+        body{
+            margin: auto 15%;
+        }
+        .flex{
+            display: flex;
+        }
+        .Top{
+            width: 100%;
+            box-sizing: border-box;
+            justify-content: space-between;
+            height: 40px;
+            font-size: 12px;
+            border-bottom: 1px solid lightgray;
+        }
+        .Top > .left{
+            color: black;
+            align-items: center;
+        }
+        .Top > .left > div{
+            padding-left: 12px;
+        }
+        
+        .Top > .right{
+            color: #888;
+            align-items: center;
+        }
+        .Top > .right > div{
+            padding-right: 14px;
+            
+        }
+        .black{
+            color: black;
+            font-weight: bold;
+        }
+        .frame{
+            width: 100%;
+            box-sizing: border-box;
+            height: 50em;
+            
+        }
+        .logo{
+            margin: auto;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 550;
+            letter-spacing: 3px;
+            padding-top: 20px;
+            padding-left: 80px;
+        }
+        .function{
+            margin-top: 0;
+            padding: 20px 20px;
+            width: 100%;
+            height: 40px;
+            justify-content: space-between;
+            line-height: 50%;
+            padding-bottom: 0;
+            padding-left: 0;
+            
+            
+        }
+        .function> .Fleft > img{
+            height: 40px;
+        }
+        .function>.Fright>input{
+            border: 0.5px solid lightgrey;
+            padding: 5px 10px;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        .MainLogo>div>img{
+            margin: 25px 0;
+            width: 100%;
+            height: 600px;
+        }
+        .TopMenu{
+            justify-content: space-between;
+            margin: auto 20px;
+            font-size: 12px;
+        }
+        .rightbar{
+            box-sizing: border-box;
+            left: 95%;
+            top: 30%;
+            position: fixed;
+            border: 1px solid black;
+            background-color: white;
+            width: 40px;
+            
+        }
+        .rightbar> #back{
+            text-align: center;
+            padding: 10px;
+        }
+        .rightbar> .btn{
+            padding: 10px ;
+            display: table;
+            text-align: center;
+           
+      }
+      .rightbar> #katalk > img {
+        width: 100%;
+    }
+        .center{
+            text-align: center;
+        }
+        .bottomFrame{
+           
+            padding-bottom: 20px;
+            
+            
+        }
+        .bottom{
+            justify-content: space-between;
+            
+        }
+        .bottom .void{
+            padding: 50px;
+            padding: 80px;
+            visibility: hidden;
+        }
+        .bottom .bestItems{
+            padding-top: 100px;
+            
+        }
+        .bottom  .line1{
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .bottom .line2{
+            color:  grey;
+            font-size: 0.9em;
+            padding-bottom: 10px;
+            
+        }
+        .bottom .notify{
+            margin-top: 0;
+            padding-top: 0;
+            
+            font-size: 13px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Top flex">
+        <div class="left flex">
+            <div>Login</div>
+            <div>JOIN UN</div>
+            <div>CART🅾️</div>
+            <div>ORDER</div>
+            <div>|</div>
+            <div class="black">MY PAGE</div>
+            <div>|</div>
+            <div class="black">BOOKMARK</div>
+        </div>
+        <div class="right flex">
+            <div>공지사항</div>
+            <div>이벤트</div>
+            <div>상품문의</div>
+            <div>상품후기</div>
+        </div>
+    </div>
+    <div class="frame">
+
+        <div class="logo">D'ARLES</div>
+        <div class="function flex">
+            <div class="Fleft"><img src="SNSLogo.png" alt=""></div>
+            <div class="Fright"><input type="text"></div>
+        </div>
+        <div class="TopMenu flex">
+            <div class="Drop Menu">🟰</div>
+            <div style="color: #E685A6 ;">RONA universe</div>
+            <div>남성의류</div>
+            <div>아우터</div>
+            <div>탑</div>
+            <div>드레스</div>
+            <div>바텀</div>
+            <div>악세사리</div>
+        </div>
+        <div class="MainLogo">
+            <div><img src="MainLogo.png" alt=""></div>
+        </div>
+        
+    </div>
+   <div class="bottomFrame">
+
+       <div class="bottom flex">
+           <div class="void">공백</div>
+           <div class="bestItems">
+               <div class="line1 center">BEST ITEMS</div>
+               <div class="line2 center">다를 이달의 인기상품을 확인해보세요!</div>
+               <div class="line3 center">⬛|📙📒📔</div>
+            </div>
+            <div class="notify">
+                <div>공지사항</div>
+                <br>
+            <fieldset>
+                CS 관련 안내 드립니다<br>
+                교환 및 환불 관련 안내<br>
+                카카오 페이가 사용 가능해졌습니다.<br>
+                2010년 10월의 후기왕은 곽용규 님입니다.<br>
+            </fieldset>
+        </div>
+    </div>
+    <div class="rightbar">
+        <div id="back">◀️</div>
+        <div class="btn">🔍</div>
+        <div class="btn">🚛</div>
+        <div class="btn">🛒</div>
+        <div class="btn">❤️</div>
+        <div class="btn">🕐</div>
+        <div id="katalk"><img src="kakao.png" alt=""></div>
+        <div class="btn">🔼</div>
+        <div class="btn">🔽</div>
+    </div>
+    
+</div>
+    <input type="color">
+</body>
+</html>
