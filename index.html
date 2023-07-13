@@ -6,7 +6,7 @@
     <title>서유리의 쇼핑몰 다를</title>
     <style>
         body{
-            margin: auto 15%;
+            margin: auto 10%;
         }
         .flex{
             display: flex;
@@ -25,14 +25,23 @@
         }
         .Top > .left > div{
             padding-left: 12px;
+            cursor: pointer;
+        }
+        .Top > .left > div:hover{
+            opacity: 0.5;
         }
         
         .Top > .right{
-            color: #888;
+            color: #373737;
             align-items: center;
         }
         .Top > .right > div{
             padding-right: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            
+        }.Top > .right > div:hover{
+            opacity: 0.5;
             
         }
         .black{
@@ -70,21 +79,89 @@
             height: 40px;
         }
         .function>.Fright>input{
-            border: 0.5px solid lightgrey;
+            border: 0.5px solid #E3E3E3;
             padding: 5px 10px;
             margin-top: 5px;
             margin-right: 20px;
+            border-radius: 3px;
         }
         .MainLogo>div>img{
             margin: 25px 0;
             width: 100%;
             height: 600px;
+            margin-top: 0;
         }
         .TopMenu{
             justify-content: space-between;
             margin: auto 20px;
             font-size: 12px;
+            border-top: 1px solid #E3E3E3;
+            
         }
+        .TopMenu > div{
+            padding-top: 10px;
+        }
+        .TopMenu > div:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .TopMenu> .DropMenu{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #E3E3E3;
+            padding-top: 0;
+            cursor: pointer;
+            width: 1.7em;   
+            display: inline-block;
+            position: relative; 
+        }
+        .TopMenu> .DropMenu > .Dropoption{
+            display: none;
+            box-sizing: border-box;
+
+        }
+        .TopMenu > div:hover .Dropoption{
+            display: block;
+            width: 75%;
+            position: fixed;
+            background-color: white;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            flex-flow: wrap;
+            
+        }
+        .TopMenu > div:hover .Dropoption:hover{
+            background-color: white(157, 204, 233);
+            border: 1px solid rgb(171, 171, 171);
+            transition-duration: 2s;
+            border-radius: 10%;
+
+            
+        }
+        .TopMenu > div:hover .Dropoption > div> a{
+            text-decoration: none;
+            margin: auto 50px;
+            color: #d8648b;
+            font-size: 20px;
+        }
+        .TopMenu > div:hover .Dropoption >div> a:hover{
+            font-size: 25px;
+            color: rgb(23, 23, 23);
+            transition: 1s;
+            font-weight: bold;
+            font-family: Fira Cord;
+        }
+        
+        .TopMenu> .DropMenu:hover{
+            background-color: #272727;
+            color: white;
+            transition-duration: 1s;
+            
+            
+        }
+        
         .rightbar{
             box-sizing: border-box;
             left: 95%;
@@ -98,21 +175,30 @@
         .rightbar> #back{
             text-align: center;
             padding: 10px;
+            cursor: pointer;
+        }
+        .rightbar > #back:hover{
+            color: white;
+            background-color: black;
         }
         .rightbar> .btn{
             padding: 10px ;
             display: table;
             text-align: center;
-           
+            cursor: pointer;
       }
+      .rightbar> .btn:hover{
+        font-size: 1.3em;
+        transition: 1s;
+  }
       .rightbar> #katalk > img {
         width: 100%;
+        cursor: pointer;
     }
-        .center{
-            text-align: center;
-        }
-        .bottomFrame{
+        
            
+        .bottomFrame{
+           text-align: center;
             padding-bottom: 20px;
             
             
@@ -170,15 +256,25 @@
         </div>
     </div>
     <div class="frame">
-
         <div class="logo">D'ARLES</div>
         <div class="function flex">
             <div class="Fleft"><img src="SNSLogo.png" alt=""></div>
-            <div class="Fright"><input type="text"></div>
+            <div class="Fright"><input type="text" placeholder="검색🔍"></div>
         </div>
         <div class="TopMenu flex">
-            <div class="Drop Menu">🟰</div>
-            <div style="color: #E685A6 ;">RONA universe</div>
+            <div class="DropMenu">
+                <div>≣</div>
+                <div class="Dropoption">
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=94">RONA universe</a></div>
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=44">남성의류</a></div>
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=25">아우터</a></div>
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=26">탑</a></div>
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=27">드레스</a></div>
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=28">바텀</a></div>
+                    <div><a href="https://darles.co.kr/product/list.html?cate_no=43">악세서리</a></div>
+                </div>
+            </div>
+            <div style="color: #E685A6 ;" >RONA universe</div>
             <div>남성의류</div>
             <div>아우터</div>
             <div>탑</div>
@@ -225,5 +321,6 @@
     
 </div>
     <input type="color">
+    
 </body>
 </html>
