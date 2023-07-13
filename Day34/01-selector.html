@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        #root{
+            border: 2px solid black;
+            width: fit-content;
+        }
+        .row{
+            display: flex;
+            font-family: Fira Code;
+        }
+        .data{
+            border: 1px solid #dadada;
+            padding: 5px 40px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Selector</h1>
+    <hr>
+
+    <div id="root">
+        <div class="row">
+            <div class="data">선택자</div>
+            <div class="data">형태</div>
+            <div class="data">예시</div>
+        </div>
+            <div class="row">
+                <div class="data">전체</div>
+                <div class="data">*</div>
+                <div class="data">*</div>
+            </div>
+            <div class="row">
+                <div class="data">태그 선택자</div>
+                <div class="data">태그</div>
+                <div class="data">h1</div>
+            </div>
+            <div class="row">
+                <div class="data">아이디 선택자</div>
+                <div class="data">#아이디</div>
+                <div class="data">#root</div>
+            </div>
+            <div class="row">
+                <div class="data">클래스 선택자</div>
+                <div class="data">.클래스</div>
+                <div class="data">.row</div>
+            </div>
+            <div class="row">
+                <div class="data">자손 선택자</div>
+                <div class="data">선택자A > 선택자B</div>
+                <div class="data">.row > .data</div>
+            </div>
+            <div class="row">
+                <div class="data">후손 선택자</div>
+                <div class="data">선택자A  선택자B</div>
+                <div class="data">.row  .data</div>
+            </div>
+            <div class="row">
+                <div class="data">속성 선택자</div>
+                <div class="data">선택자[속성="값"]</div>
+                <div class="data">input[type="text"]</div>
+            </div>
+            <div class="row">
+                <div class="data">속성 포함 선택자</div>
+                <div class="data">선택자[속성*="값"]</div>
+                <div class="data">img[src*="jpg"]</div>
+            </div>
+            <div class="row">
+                <div class="data">속성 시작 선택자</div>
+                <div class="data">선택자[속성^~="값"]</div>
+                <div class="data">img[src~^="danbi"]</div>
+            </div>
+            <div class="row">
+                <div class="data">속성 종료 선택자</div>
+                <div class="data">선택자[속성$~="값"]</div>
+                <div class="data">img[src~$="gif"]</div>
+            </div>
+            <div class="row">
+                <div class="data">동위 선택자</div>
+                <div class="data">선택자A + 선택자B</div>
+                <div class="data">h1 + h2,바로 다음요소만</div>
+            </div>
+            <div class="row">
+                <div class="data">동위 선택자</div>
+                <div class="data">선택자A ~ 선택자B</div>
+                <div class="data">h1 ~ h2, 다음 모든 요소</div>
+            </div>
+            <div class="row">
+                <div class="data">부정 선택자</div>
+                <div class="data">:not(선택자)</div>
+                <div class="data">input:not([type="checkbox"]) <br>
+                                 타입이 체크박스가 아닌 모든 요소를 선택</div>
+            </div>
+    </div>
+
+</body>
+</html>
